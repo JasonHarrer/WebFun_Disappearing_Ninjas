@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content-"Disappearing Ninja Assignment">
+        <link rel="stylesheet" href="ninja.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                console.log("Attaching Events")
+                $("img").click(function() { console.log("Image clicked!"); $(this).slideUp(400); })
+                $("button").click(function() { console.log("Button clicked!"); $("img").slideDown(400); })
+                console.log("ready!")
+            })
+
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+            <img src="https://free-images.com/sm/1c78/ninja_7_t_png.jpg" alt="Ninja">
+        </div>
+        <button>Restore</button>
+    </body>
+</html>
